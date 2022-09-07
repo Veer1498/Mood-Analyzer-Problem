@@ -13,15 +13,15 @@ public class MoodAnalyzer {
         System.out.println("Welcome to Mood Analyzer");
         System.out.println("========================");
     }
-//    //Function to Check Mood of a String Entered
-//    public String moodCheck(String message){
-//        if(message.contains("SAD")) {
-//            System.out.println("In SAD Mood");
-//            return "SAD";
-//        }
-//        else{
-//            System.out.println("In HAPPY Mood");
-//            return "HAPPY";
-//        }
-//    }
+    //Function to Check Mood of a String Entered
+    public String moodCheck(String message){
+        if(message.contains("SAD")) {
+            System.out.println("In SAD Mood");
+            return "SAD";
+        }
+        else{
+            System.out.println("In HAPPY Mood");
+            return "HAPPY";
+        }
+    }
 }

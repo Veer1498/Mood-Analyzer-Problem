@@ -15,7 +15,7 @@ public class MoodAnalyzer {
     }
     //Function to Check Mood of a String Entered
     public String moodCheck(String message){
-        if(message.contains("SAD")) {
+        if(message.contains("Sad")) {
             System.out.println("In SAD Mood");
             return "SAD";
         }

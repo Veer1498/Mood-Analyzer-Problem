@@ -17,9 +17,16 @@ public class MoodAnalyzerTest {
 
     @Test
     public void if_MessageWasSad_ShouldReturnSad(){
-        moodAnalyze.welcome();
-        String message = "I am in Happy Mood";
-        String result = moodAnalyze.moodCheck(message);
-        Assertions.assertEquals("SAD",result);
+
+        String message = "SAD";
+        String result1 = moodAnalyze.moodCheck(message);
+        Assertions.assertEquals("SAD",result1);
+    }
+    @Test
+    public void if_MessageWasHappy_ShouldReturnHappy(){
+
+        String message = "HAPPY";
+        String result2 = moodAnalyze.moodCheck(message);
+        Assertions.assertEquals("HAPPY",result2);
     }
 }

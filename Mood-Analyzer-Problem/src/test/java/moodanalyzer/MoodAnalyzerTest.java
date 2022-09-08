@@ -13,15 +13,27 @@ import org.junit.jupiter.api.Test;
  * Created a Test Function and Imported Assertions and checking SAD or HAPPY
  */
 public class MoodAnalyzerTest {
-    MoodAnalyzer moodAnalyze = new MoodAnalyzer();
 
+    //Test Case To Check If Message contains SAD
     @Test
     public void if_MessageWasSad_ShouldReturnSad(){
-        moodAnalyze.welcome();
-
-//        String message = "I am in SAD Mood";
-//       String mood = moodAnalyze.moodCheck(message);
-//        Assertions.assertEquals("SAD",mood);
+        MoodAnalyzer moodAnalyze = new MoodAnalyzer("This is SAD message");
+        String result1 = moodAnalyze.moodCheck();
+        Assertions.assertEquals("SAD",result1);
+    }
+    //Test Case To Check If Message contains HAPPY
+    @Test
+    public void if_MessageWasHappy_ShouldReturnHappy(){
+        MoodAnalyzer moodAnalyze = new MoodAnalyzer("This is HAPPY message");
+        String result2 = moodAnalyze.moodCheck();
+        Assertions.assertEquals("HAPPY",result2);
+    }
+    //Test Case To Check If Message was Null
+    @Test
+    public void ifMessageWasNULL_ShouldReturnHappy(){
+       MoodAnalyzer moodAnalyze = new MoodAnalyzer(null);
+       String result3 = moodAnalyze.moodCheck();
+       Assertions.assertEquals("HAPPY",result3);
 
     }
 }

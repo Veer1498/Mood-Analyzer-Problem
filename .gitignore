@@ -1,12 +1,12 @@
 # Compiled class file
-*.class
-*.gradle/
-build.gradle
-build/
-gradle/
-gradlew
-gradlew.bat
-settings.gradle
+Mood-Analyzer-Problem/.gradle/
+Mood-Analyzer-Problem/.idea/
+Mood-Analyzer-Problem/build.gradle
+Mood-Analyzer-Problem/build/
+Mood-Analyzer-Problem/gradle/
+Mood-Analyzer-Problem/gradlew
+Mood-Analyzer-Problem/gradlew.bat
+Mood-Analyzer-Problem/settings.gradle
 
 # Log file
 *.log

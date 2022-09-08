@@ -10,17 +10,26 @@ package moodanalyzer;
 public class MoodAnalyzer {
     String message;
 
+    //Constructor created to pass message as mentioned in UC.
     public MoodAnalyzer(String message) {
         this.message = message;
     }
 
     //Function to Check Mood of a String Entered
     public String moodCheck(){
-        if(message.contains("SAD")) {
-            return "SAD";
-        }
-        else {
-            return "HAPPY";
-        }
+        //Created Try and Catch Blocks to Handle Exceptions if Occurs.
+       try{
+           if(message.contains("SAD")) {
+               return "SAD";
+           }
+           else {
+               return "HAPPY";
+           }
+       }
+       //Don't Know what would be exception, So Took a Normal Exception to Catch, Whatever Exception Occurs.
+       catch (Exception exception){
+           return "HAPPY";
+       }
+
     }
 }

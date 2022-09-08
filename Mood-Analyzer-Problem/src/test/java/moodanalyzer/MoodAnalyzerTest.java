@@ -14,16 +14,26 @@ import org.junit.jupiter.api.Test;
  */
 public class MoodAnalyzerTest {
 
+    //Test Case To Check If Message contains SAD
     @Test
     public void if_MessageWasSad_ShouldReturnSad(){
         MoodAnalyzer moodAnalyze = new MoodAnalyzer("This is SAD message");
         String result1 = moodAnalyze.moodCheck();
         Assertions.assertEquals("SAD",result1);
     }
+    //Test Case To Check If Message contains HAPPY
     @Test
     public void if_MessageWasHappy_ShouldReturnHappy(){
         MoodAnalyzer moodAnalyze = new MoodAnalyzer("This is HAPPY message");
         String result2 = moodAnalyze.moodCheck();
         Assertions.assertEquals("HAPPY",result2);
+    }
+    //Test Case To Check If Message was Null
+    @Test
+    public void ifMessageWasNULL_ShouldReturnHappy(){
+       MoodAnalyzer moodAnalyze = new MoodAnalyzer(null);
+       String result3 = moodAnalyze.moodCheck();
+       Assertions.assertEquals("HAPPY",result3);
+
     }
 }

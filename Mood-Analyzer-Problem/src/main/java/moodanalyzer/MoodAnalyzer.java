@@ -8,13 +8,14 @@ package moodanalyzer;
  */
 //Mood Analyzer Class
 public class MoodAnalyzer {
-    //Welcome Function
-    public static void welcome(){
-        System.out.println("Welcome to Mood Analyzer");
-        System.out.println("========================");
+    String message;
+
+    public MoodAnalyzer(String message) {
+        this.message = message;
     }
+
     //Function to Check Mood of a String Entered
-    public String moodCheck(String message){
+    public String moodCheck(){
         if(message.contains("SAD")) {
             return "SAD";
         }
